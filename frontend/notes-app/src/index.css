@@ -1,0 +1,38 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: "Archivo", sans-serif;
+  }
+
+  body {
+    background-color: #fdfeff;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1.5px] px-4 py-3 rounded mb-[13px] outline-none;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm bg-violet-600 text-white p-2 rounded my-1 cursor-pointer hover:bg-violet-800 drop-shadow-2xl;
+  }
+
+  .icon-btn {
+    @apply text-xl text-slate-300 cursor-pointer hover:text-violet-600;
+  }
+
+  .input-label {
+    @apply text-xs text-slate-400;
+  }
+
+  .primary-color{
+    @apply text-violet-600;
+  }
+}
